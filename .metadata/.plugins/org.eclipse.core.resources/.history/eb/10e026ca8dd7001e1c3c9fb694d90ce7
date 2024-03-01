@@ -26,7 +26,7 @@
 		<property name="studentAddress" value="pune"/>
 			
 	</bean>
-	<!-- Using P schema for consize coding-->
+	<!-- Using P schema-->
 	 <bean class="com.springcore.Student" name="student3" p:studentId="21"
 	 p:studentName="Shubham" p:studentAddress="Mumbai"/>
 		
