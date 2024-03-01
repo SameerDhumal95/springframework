@@ -12,7 +12,7 @@ System.out.println(p);
 
 Addition add =(Addition)contex.getBean("addition");
 add.doSum();
-	
+	}
 	}
 
 }

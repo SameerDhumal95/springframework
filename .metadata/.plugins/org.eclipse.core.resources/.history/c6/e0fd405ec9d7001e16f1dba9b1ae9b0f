@@ -18,7 +18,7 @@
 	</bean>
 	
 	<bean class="com.springcore.ci.Addition" name="addition">
-		<constructor-arg value="12" type="double" index="1"/>
-			<constructor-arg value="34" type="double" index="0"/>
+		<constructor-arg value="12"/>
+			<constructor-arg value="34"/>
 		</bean>
 </beans>
