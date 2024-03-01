@@ -35,8 +35,13 @@
 		
 	</property>
 	
-	<!-- Injecting Reference type-->
+	<!-- Injecting Reference type
+	A <- B
+	-->
 	
+	<property name="properties">
+		<ref bean = "B" />
+	</property>
 </bean>	
 
 </beans>
