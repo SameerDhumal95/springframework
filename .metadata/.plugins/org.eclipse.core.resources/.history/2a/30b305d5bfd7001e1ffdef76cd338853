@@ -1,0 +1,23 @@
+package com.springcore.ci;
+
+public class Person {
+
+	private String personName;
+	private int personId;
+	private Certi cer;
+	
+	public Person(String name,int id,Certi cer)
+	{
+		this.personName=name;
+		this.personId=id;
+		this.cer=cer;
+	}
+
+
+	@Override
+	public String toString() {
+		return this.personName+" : "+this.personId;
+	}
+	
+	
+}
