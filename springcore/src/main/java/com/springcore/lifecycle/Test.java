@@ -16,7 +16,9 @@ public class Test {
 		System.out.println(s);
 		//regesterShutdownhook method for destroy obj
 		context.registerShutdownHook();
-		
+		System.out.println("----------------------");
+		Pepsi p = (Pepsi)context.getBean("pepsi");
+		System.out.println(p);
 	}
 
 	
