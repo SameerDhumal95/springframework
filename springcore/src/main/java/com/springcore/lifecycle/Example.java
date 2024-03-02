@@ -30,7 +30,7 @@ public class Example  {
 	@PostConstruct
 	public void init()
 	{
-		System.out.println("Init");
+		System.out.println("Init from example");
 	}
 	@PreDestroy
 	public void destroy()

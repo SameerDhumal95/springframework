@@ -8,7 +8,7 @@
 http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
    
    
-    <!--
+    <!--this is for all annotation enable
     <context:annotation-config/>
      -->
    
@@ -25,4 +25,6 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
 	<bean class="com.springcore.lifecycle.Example" name="ex">
 		<property name="subject" value="Mathamatics"></property>
 		</bean>	
+		<!--this is for single annotation enable-->
+		<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
 </beans>

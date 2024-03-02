@@ -12,14 +12,14 @@ public class Test {
 
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/lifecycle/config.xml");
 		
-		Samosa s = (Samosa)context.getBean("samosa");
-		System.out.println(s);
-		//regesterShutdownhook method for destroy obj
-		context.registerShutdownHook();
-		System.out.println("----------------------");
-		Pepsi p = (Pepsi)context.getBean("pepsi");
-		System.out.println(p);
-		
+//		Samosa s = (Samosa)context.getBean("samosa");
+//		System.out.println(s);
+//		//regesterShutdownhook method for destroy obj
+//		context.registerShutdownHook();
+//		System.out.println("----------------------");
+//		Pepsi p = (Pepsi)context.getBean("pepsi");
+//		System.out.println(p);
+//		
 		//init / destroy using Annotation
 		Example e = (Example)context.getBean("ex");
 		System.out.println(e);
