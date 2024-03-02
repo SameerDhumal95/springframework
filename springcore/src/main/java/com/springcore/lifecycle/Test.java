@@ -19,6 +19,12 @@ public class Test {
 		System.out.println("----------------------");
 		Pepsi p = (Pepsi)context.getBean("pepsi");
 		System.out.println(p);
+		
+		//init / destroy using Annotation
+		Example e = (Example)context.getBean("ex");
+		System.out.println(e);
+		
+		
 	}
 
 	
