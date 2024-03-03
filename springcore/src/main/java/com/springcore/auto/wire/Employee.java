@@ -15,6 +15,7 @@ public class Employee {
 
 	public void setAddress(Address address) {
 		this.address = address;
+		System.out.println("Inside setter");
 	}
 
 	public Employee() {
@@ -25,6 +26,7 @@ public class Employee {
 	public Employee(Address address) {
 		super();
 		this.address = address;
+		System.out.println("Inside Constructor");
 	}
 	
 	
