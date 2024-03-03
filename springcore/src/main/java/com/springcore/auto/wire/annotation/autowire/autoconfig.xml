@@ -16,6 +16,11 @@
 		<property name="City" value="Pen"></property>
 	</bean>
 	
+	<bean class="com.springcore.auto.wire.annotation.autowire.Address" name="temp">
+		<property name="street" value="Mumbai-Pune highway"></property>
+		<property name="City" value="Mumbai"></property>
+	</bean>
+	
 	<!-- Autowiring done using XML-@Autowire -->		
 			<bean class="com.springcore.auto.wire.annotation.autowire.Employee" name="emp" >	
 	</bean>

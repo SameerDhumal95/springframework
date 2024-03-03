@@ -1,10 +1,12 @@
 package com.springcore.auto.wire.annotation.autowire;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Employee {
 
-	//@Autowired
+	@Autowired
+	@Qualifier("temp") //using qualifer we will choice bean to inject
 	private Address address;
 
 	@Override
@@ -25,7 +27,7 @@ public class Employee {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-    @Autowired
+    //@Autowired
 	public Employee(Address address) {
 		super();
 		this.address = address;
