@@ -13,7 +13,7 @@ public class Test {
         
 		Student student = context.getBean("ob",Student.class);
 		System.out.println(student);
-
+        System.out.println(student.getAddress());
 	}
 
 }
