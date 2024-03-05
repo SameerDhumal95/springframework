@@ -5,17 +5,14 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 <!-- XML based autowire concepts-->
-    
     <bean class="com.springcore.auto.wire.Address" name="address">
 		<property name="street" value="Mumbai-Goa highway"></property>
 		<property name="City" value="Pen"></property>
 	</bean>
 	<!-- Autowiring done using XML-byname -->
-    <!--<bean class="com.springcore.auto.wire.Employee" name="emp" autowire="byName">-->
-		
+    <!--<bean class="com.springcore.auto.wire.Employee" name="emp" autowire="byName">-->		
 	<!-- Autowiring done using XML-byType -->
-	<!--<bean class="com.springcore.auto.wire.Employee" name="emp" autowire="byType">-->
-		
+	<!--<bean class="com.springcore.auto.wire.Employee" name="emp" autowire="byType">-->		
 	<!-- Autowiring done using XML-constructor -->		
 			<bean class="com.springcore.auto.wire.Employee" name="emp" autowire="constructor">	
 	</bean>
