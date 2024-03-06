@@ -14,7 +14,7 @@ private String studentName;
 @Value("Pen")
 private String City;
 
-@Value("#{temp}")
+@Value("#{temp}") //spring expression langauge
 private List<String> address;
 
 public String getStudentName() {
