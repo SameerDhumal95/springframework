@@ -12,8 +12,12 @@ public class DemoMain {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ApplicationContext context  = new AnnotationConfigApplicationContext(javaconfig.class);
-		Student std = (Student)context.getBean("firststudent",Student.class);
+//		Student std = (Student)context.getBean("firststudent",Student.class);
+//		System.out.println(std);
+//		std.study();
 		
+		
+		Student std = (Student)context.getBean("getStudent",Student.class);
 		System.out.println(std);
 		std.study();
 	}
