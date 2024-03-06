@@ -17,7 +17,7 @@ public class DemoMain {
 //		std.study();
 		
 		
-		Student std = (Student)context.getBean("getStudent",Student.class);
+		Student std = (Student)context.getBean("con",Student.class);
 		System.out.println(std);
 		std.study();
 	}

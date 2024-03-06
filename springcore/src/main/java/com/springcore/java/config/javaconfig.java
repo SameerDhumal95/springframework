@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Configuration;
 public class javaconfig {
 
 	//creating a new student object
-	@Bean
+	@Bean(name={"temp","con"})
 	public Student getStudent()
 	{
 		Student student = new Student(getSamosa());
