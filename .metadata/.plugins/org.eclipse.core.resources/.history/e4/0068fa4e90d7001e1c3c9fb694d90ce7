@@ -1,9 +1,0 @@
-package com.springcore.collections;
-
-import java.util.List;
-
-public class Emp {
-
-	private String empName;
-	private List<String> phones;
-}

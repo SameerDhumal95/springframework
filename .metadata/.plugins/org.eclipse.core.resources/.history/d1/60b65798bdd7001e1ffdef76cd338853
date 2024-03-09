@@ -1,8 +1,0 @@
-package com.springcore.ci;
-
-public class Person {
-
-	private String personName;
-	private int personId;
-	
-}
