@@ -24,6 +24,13 @@ private JdbcTemplate jdbcTemplate;
 		return r;
 	}
 	
+	@Override
+	public int delete(Student student) {
+		String query = "delete from student where id =?";
+        int r = this.jdbcTemplate.update(query,student.getId());
+		return r;
+	}
+	
 	public JdbcTemplate getJdbcTemplate() {
 		return jdbcTemplate;
 	}
@@ -31,6 +38,8 @@ private JdbcTemplate jdbcTemplate;
 	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
 		this.jdbcTemplate = jdbcTemplate;
 	}
+
+	
 
 	
 

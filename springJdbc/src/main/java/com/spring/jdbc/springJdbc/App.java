@@ -34,14 +34,25 @@ public class App
         student.setId(75);
         student.setName("Bablu");
         student.setAddress("Mumbai");
+         int result = studentDao.insert(student);
+        System.out.println("Student inserted "+ result);
         
-    */    
+    */  
+        
+        /*      //update student      
         Student student = new  Student();
         student.setId(75);
         student.setName("Bablu");
         student.setAddress("US");
         
-        int result = studentDao.change(student);
+         int result = studentDao.change(student);
         System.out.println("Student updated "+ result);
+     */
+        Student student = new  Student();
+        student.setId(75);
+        int result = studentDao.delete(student);
+        System.out.println("Student deleted "+ result);
+        
+       
     }
 }
