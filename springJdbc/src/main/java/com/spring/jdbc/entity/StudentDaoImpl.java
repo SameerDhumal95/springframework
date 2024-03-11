@@ -1,5 +1,7 @@
 package com.spring.jdbc.entity;
 
+import java.util.List;
+
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 
@@ -49,6 +51,14 @@ private JdbcTemplate jdbcTemplate;
 		RowMapper<Student> rowMapper = new RowMapperImpl();
 		Student student = this.jdbcTemplate.queryForObject(query, rowMapper,studentId);
 		return student;
+	}
+
+	@Override
+	public List<Student> getAllStudents() {
+		String query = "select * from student";
+		List<Student> students = this.jdbcTemplate.query(query,new RowMapperImpl());
+		
+		return students;
 	}
 
 	

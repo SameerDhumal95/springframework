@@ -1,5 +1,7 @@
 package com.spring.jdbc.springJdbc;
 
+import java.util.List;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -55,9 +57,16 @@ public class App
         */
      
         
-        //row mapper to get single data as single object 
+      /*  //row mapper to get single data as single object 
             Student student = studentDao.getStudent(1);
             System.out.println(student);
-       
+       */
+        
+        //row mapper to get all students
+        List<Student> students = studentDao.getAllStudents();
+        for(Student s:students)
+        {
+        	System.out.println(s);
+        }
     }
 }
