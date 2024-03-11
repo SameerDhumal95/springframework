@@ -20,7 +20,7 @@
 		 <ref bean="ds"/>
 	 </property> --> 
 	 
-	 <bean class="com.spring.jdbc.dao.StudentDaoImpl" name="studentDao">
+	 <bean class="com.spring.jdbc.entity.StudentDaoImpl" name="studentDao">
 		
 		<property name="jdbcTemplate" ref="jdbcTemplate"/>
 		 </bean>

@@ -4,7 +4,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-import com.spring.jdbc.entity.StudentDao;
+import com.spring.jdbc.dao.StudentDao;
 
 /**
  * Hello world!
@@ -29,15 +29,15 @@ public class App
         
         StudentDao studentDao = context.getBean("studentDao",StudentDao.class);
         
-  /*      //Insert student
-        Student student = new  Student();
-        student.setId(75);
-        student.setName("Bablu");
-        student.setAddress("Mumbai");
-         int result = studentDao.insert(student);
-        System.out.println("Student inserted "+ result);
-        
-    */  
+//      //Insert student
+//        Student student = new  Student();
+//        student.setId(78);
+//        student.setName("Bablu");
+//        student.setAddress("Mumbai");
+//         int result = studentDao.insert(student);
+//        System.out.println("Student inserted "+ result);
+//        
+     
         
         /*      //update student      
         Student student = new  Student();
@@ -48,11 +48,16 @@ public class App
          int result = studentDao.change(student);
         System.out.println("Student updated "+ result);
      */
-        Student student = new  Student();
+      /*  Student student = new  Student();
         student.setId(75);
         int result = studentDao.delete(student);
         System.out.println("Student deleted "+ result);
+        */
+     
         
+        //row mapper to get single data as single object 
+            Student student = studentDao.getStudent(1);
+            System.out.println(student);
        
     }
 }

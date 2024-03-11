@@ -1,4 +1,4 @@
-package com.spring.jdbc.entity;
+package com.spring.jdbc.dao;
 
 import com.spring.jdbc.springJdbc.Student;
 
@@ -10,4 +10,5 @@ public interface StudentDao {
 	
 	public int delete(Student student);
 	
+	public Student getStudent(int studentId);
 }
